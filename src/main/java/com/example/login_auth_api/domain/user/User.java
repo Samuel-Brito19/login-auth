@@ -1,4 +1,4 @@
-package com.example.login_auth_api.domain.User;
+package com.example.login_auth_api.domain.user;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -19,4 +19,8 @@ public class User {
     private String name;
     private String email;
     private String password;
+
+    public String getEmail() {
+        return email;
+    }
 }

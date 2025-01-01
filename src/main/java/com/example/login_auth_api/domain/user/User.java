@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
 @Entity
 @Table(name = "users")
@@ -26,5 +27,19 @@ public class User {
 
     public String getPassword() {
         return password;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setPassword(String encode) {
+
+    }
+
+    public void setEmail(String email) {
+    }
+
+    public void setName(String name) {
     }
 }
